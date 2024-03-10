@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Granite Photo Gallery</h1>
+        <form id="photo-form" class="mb-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="photo-title" placeholder="Title">
+            </div> <br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="photo-url" placeholder="Image URL">
+            </div> <br>
+            <div class="form-group">
+                <textarea class="form-control" id="photo-details" placeholder="Details"></textarea>
+            </div> <br>
+            <button type="submit" class="btn btn-primary">Add Photo</button>
+       
+        </form>
+    
+        
+        <div id="photo-gallery" class="row">
+
+            <!-- Photo cards will be appended here -->
+
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
