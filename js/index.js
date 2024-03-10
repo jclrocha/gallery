@@ -2,6 +2,7 @@ $(document).ready(function() {
     const API_URL = 'https://65ecdddd0ddee626c9b1012e.mockapi.io/api/PhotoGallery';
 
     // Function to fetch all photos from the server
+    
     function fetchPhotos() {
         $.get(API_URL, function(data) {
             $('#photo-gallery').empty();
